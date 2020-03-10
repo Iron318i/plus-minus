@@ -6,9 +6,23 @@
 // Table of Contents
 //
 // Color system
+$white:    #fff;
+$gray-500: #8599a5;
+$gray-600: #6d797e;
+$gray-700: #465156;
+$gray-800: #313d43;
+$gray-900: #263238;
 
-$yellow: #ffe000;
-$blue: #1d2c34;
+$blue:    #3069d0;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #e83e8c;
+$red:     #d3251b;
+$orange:  #f86c26;
+$yellow:  #ffa800;
+$green:   #28a745;
+$teal:    #20c997;
+$cyan:    #079fa1;
 
 $primary: $blue;
 $secondary: $yellow;
@@ -19,7 +33,10 @@ $enable-rounded: false;
 // Spacing
 $spacer: 2rem;
 // Body
+$body-bg: $gray-900;
+$body-color: $white;
 // Links
+$link-color: $white;
 // Paragraphs
 // Grid breakpoints
 $grid-breakpoints: (
@@ -36,21 +53,11 @@ lg: 915px
 );
 // Grid columns
 // Fonts
-$font-family-sans-serif:  'Raleway', sans-serif;
+$font-family-sans-serif:  'Open Sans', sans-serif;
 
 $font-size-base: 1rem;
-$font-size-lg: rem(27px);
 
-$font-weight-base : 500;
-$font-weight-bold: 900;
-$font-weight-bolder: $font-weight-bold;
-
-$font-weight-normal: 500;
-$small-font-size: 75%;
-
-
-
-
+$font-weight-base : 300;
 
 $h1-font-size: rem(40px);
 $h2-font-size: rem(40px);
@@ -59,7 +66,7 @@ $h4-font-size: rem(18px);
 $h5-font-size: $font-size-base * 1.25;
 $h6-font-size: $font-size-base ;
 
-$headings-font-weight: 900;
+$headings-font-weight: 700;
 
 $headings-margin-bottom: 1rem;
 
@@ -73,6 +80,8 @@ $btn-padding-y-lg: rem(16px);
 // Z-index master list
 // Navs
 // Navbar
+$navbar-padding-y: 0;
+$navbar-padding-x: 0;
 // Pagination
 // Jumbotron
 // Form states and alerts
