@@ -1,0 +1,14 @@
+html{
+    font-size: 16px;;
+}
+@import "base/rem";
+@import "base/fonts";
+@import "base/variables";
+@import "base/bootstrap";
+@import "~owl.carousel/src/scss/owl.carousel";
+@import "~owl.carousel/src/scss/owl.theme.default";
+/*
+@import "~@fancyapps/fancybox/dist/jquery.fancybox.css";
+*/
+@import "base/main";
+@import "base/responsive";

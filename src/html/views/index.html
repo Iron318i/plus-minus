@@ -1,0 +1,18 @@
+<% var data = {
+  title: "Conversion Industries"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<section class="py-4">
+    <div class="container text-center">
+	<h1>Bulletproof your business with industry dominating conversion rates.</h1>
+	<p><strong>Before a conversion audit:</strong> Attempts to improve your conversion rate feel scattered. You have ideas, but they’re just guesses. It’s tough to know where to start, and the unknown keeps you stressed. </p>
+	<p class="mb-3"><strong>After a conversion audit:</strong> You know what motiviates your visitors, why they buy, why they leave. Your biggest opportunities are clear and you have an improvement plan that will work. Clarity brings calm and results.</p>
+	<p>
+	    <a href="#" class="btn btn-lg btn-secondary">Interested? Get Started</a>
+	    <small class="d-block">Learn more about an audit. No commitment.</small>
+	</p>
+    </div>
+</section>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

@@ -1,0 +1,94 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
+// Just copy a variable from src/sass/bootstrap4/_variables.scss, paste it here and edit the value.
+
+
+// Table of Contents
+//
+// Color system
+
+$yellow: #ffe000;
+$blue: #1d2c34;
+
+$primary: $blue;
+$secondary: $yellow;
+
+
+// Options
+$enable-rounded: false;
+// Spacing
+$spacer: 2rem;
+// Body
+// Links
+// Paragraphs
+// Grid breakpoints
+$grid-breakpoints: (
+xs: 0,
+sm: 576px,
+md: 768px,
+lg: 992px
+);
+// Grid containers
+$container-max-widths: (
+sm: 570px,
+md: 760px,
+lg: 915px
+);
+// Grid columns
+// Fonts
+$font-family-sans-serif:  'Raleway', sans-serif;
+
+$font-size-base: 1rem;
+$font-size-lg: rem(27px);
+
+$font-weight-base : 500;
+$font-weight-bold: 900;
+$font-weight-bolder: $font-weight-bold;
+
+$font-weight-normal: 500;
+$small-font-size: 75%;
+
+
+
+
+
+$h1-font-size: rem(40px);
+$h2-font-size: rem(40px);
+$h3-font-size: rem(32px);
+$h4-font-size: rem(18px);
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base ;
+
+$headings-font-weight: 900;
+
+$headings-margin-bottom: 1rem;
+
+// Components
+// Tables
+// Buttons
+$btn-font-weight: 900;
+$btn-padding-y-lg: rem(16px);
+// Forms
+// Dropdowns
+// Z-index master list
+// Navs
+// Navbar
+// Pagination
+// Jumbotron
+// Form states and alerts
+// Cards
+// Tooltips
+// Popovers
+// Badges
+// Modals
+// Alerts
+// Progress bars
+// List group
+// Image thumbnails
+// Figures
+// Breadcrumbs
+// Carousel
+// Close
+// Code
+
+//$dot-background: $blue;
