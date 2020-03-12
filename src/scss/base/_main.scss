@@ -68,18 +68,34 @@
     }
 }
 .nav-events{
-    padding-left: 20px;
-    padding-right: 20px;
+    display: flex;
+    width: 100%;
+    .favorite-item{
+	flex: 0 0 80px;
+    }
+    .carousel-wrp{
+	flex-grow: 1;
+	max-width: calc(100%-80px);
+    }
     .owl-prev,
     .owl-next{
+	transform: translateY(-50%);
 	position: absolute;
 	top: 50%;
+	&.disabled{
+	    opacity: .5;
+	}
+	svg{
+	    color: #fff;
+	    width: 20px;
+	    height: 20px;
+	}
     }
     .owl-prev{
-	left: 5px;
+	left: 10px;
     }
     .owl-next{
-	right: 5px;
+	right: 10px;
     }
     .event-link{
 	display: flex;
