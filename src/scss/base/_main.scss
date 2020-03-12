@@ -166,8 +166,36 @@
     }
 }
 .nav-countries{
+    display: flex;
+    width: 100%;
+    .search-countries{
+	flex: 0 0 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	svg{
+	    width: 18px;
+	    height: 18px;
+	}
+	.dropdown-menu{
+	    padding: .5rem;
+	    background-color: $gray-800;
+	}
+    }
+    .carousel-wrp{
+	flex-grow: 1;
+	max-width: calc(100%-50px);
+    }
     .country-link{
 	display: flex;
 	align-items: center;
+	padding: 5px 0;
+	border-top: 3px solid transparent;
+	border-bottom: 3px solid transparent;
     }
+    .country-link:hover,
+	.current.country-link{
+	border-bottom: 3px solid $yellow;
+    }
+
 }
