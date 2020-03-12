@@ -68,6 +68,19 @@
     }
 }
 .nav-events{
+    padding-left: 20px;
+    padding-right: 20px;
+    .owl-prev,
+    .owl-next{
+	position: absolute;
+	top: 50%;
+    }
+    .owl-prev{
+	left: 5px;
+    }
+    .owl-next{
+	right: 5px;
+    }
     .event-link{
 	display: flex;
 	flex-direction: column;
@@ -86,7 +99,20 @@
 	    color: #fff;
 	}
     }
-    .active .event-link,
+    .favorite{
+	.counter{
+	    top: 15%;
+	    right: 20%;
+	    color: #fff;
+	    display: inline-block;
+	    text-align: center;
+	    background: $red;
+	    min-width: 18px;
+	    padding: 0 2px;
+	    border-radius: 50%;
+	}
+    }
+    .current .event-link,
     .event-link:hover,
 	.favorite{
 	background-color: $gray-800;
@@ -100,4 +126,5 @@
 	    height: 30px;
 	}
     }
+
 }
