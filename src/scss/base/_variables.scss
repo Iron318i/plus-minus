@@ -39,19 +39,22 @@ $body-color: $white;
 $link-color: $white;
 // Paragraphs
 // Grid breakpoints
+// Grid breakpoints
 $grid-breakpoints: (
 xs: 0,
 sm: 576px,
 md: 768px,
-lg: 992px
+lg: 992px,
+xl: 1280px
 );
 // Grid containers
 $container-max-widths: (
 sm: 570px,
 md: 760px,
-lg: 915px
+lg: 990px,
+xl: 1260px,
 );
-// Grid columns
+// Grid c
 // Fonts
 $font-family-sans-serif:  'Open Sans', sans-serif;
 
@@ -80,8 +83,12 @@ $btn-padding-y-lg: rem(16px);
 // Z-index master list
 // Navs
 // Navbar
+$navbar-brand-padding-y: 0;
+
 $navbar-padding-y: 0;
 $navbar-padding-x: 0;
+
+$navbar-nav-link-padding-x: 0;
 // Pagination
 // Jumbotron
 // Form states and alerts
