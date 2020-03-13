@@ -1,18 +1,28 @@
 <% var data = {
-  title: "Conversion Industries"
+title: "Conversion Industries"
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
 
-<section class="py-4">
-    <div class="container text-center">
-	<h1>Bulletproof your business with industry dominating conversion rates.</h1>
-	<p><strong>Before a conversion audit:</strong> Attempts to improve your conversion rate feel scattered. You have ideas, but they’re just guesses. It’s tough to know where to start, and the unknown keeps you stressed. </p>
-	<p class="mb-3"><strong>After a conversion audit:</strong> You know what motiviates your visitors, why they buy, why they leave. Your biggest opportunities are clear and you have an improvement plan that will work. Clarity brings calm and results.</p>
-	<p>
-	    <a href="#" class="btn btn-lg btn-secondary">Interested? Get Started</a>
-	    <small class="d-block">Learn more about an audit. No commitment.</small>
-	</p>
+<div class="container-fluid live-bets">
+    <div class="row">
+	<div class="col-2 sidebar">
+	    <div class="card timeline">
+		<span id="clockmain"> 12:57:19</span>
+		<span>Минимальная ставка - 0.5 руб.</span>
+	    </div>
+	    <div class="input-group">
+		<input type="text" class="form-control" placeholder="Поиск" aria-describedby="button-addon2">
+		<div class="input-group-append">
+		    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Поиск</button>
+		</div>
+	    </div>
+
+	</div>
+	<div class="col-10 main-content">
+	    <%= _.template(require('./../includes/live-menu.html').default)(data) %>
+
+	</div>
     </div>
-</section>
+</div>
 
 <%= _.template(require('./../includes/footer.html').default)(data) %>
