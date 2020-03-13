@@ -6,9 +6,13 @@ title: "Conversion Industries"
 <div class="container-fluid live-bets">
     <div class="row">
 	<div class="col-2 sidebar">
-	    <div class="card timeline">
-		<span id="clockmain"> 12:57:19</span>
-		<span>Минимальная ставка - 0.5 руб.</span>
+	    <div class="card card-timeline">
+		<div class="card-body">
+		    <div class="row">
+			<div class="col-auto clock"><span id="clockmain">12:57:19</span></div>
+			<div class="col-auto min-bet"> Минимальная ставка - <span class="">0.5 руб.</span></div>
+		    </div>
+		</div>
 	    </div>
 	    <div class="input-group">
 		<input type="text" class="form-control" placeholder="Поиск" aria-describedby="button-addon2">
@@ -16,11 +20,17 @@ title: "Conversion Industries"
 		    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Поиск</button>
 		</div>
 	    </div>
-
+	    <div class="card mt-1">
+		<h5 class="card-header">Featured</h5>
+		<div class="card-body">
+		    <h5 class="card-title">Special title treatment</h5>
+		    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+		    <a href="#" class="btn btn-primary">Go somewhere</a>
+		</div>
+	    </div>
 	</div>
 	<div class="col-10 main-content">
 	    <%= _.template(require('./../includes/live-menu.html').default)(data) %>
-
 	</div>
     </div>
 </div>

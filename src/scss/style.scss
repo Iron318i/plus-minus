@@ -11,5 +11,7 @@ html{
 @import "~@fancyapps/fancybox/dist/jquery.fancybox.css";
 */
 @import "base/main";
-@import "base/countries";
+@import "parts/countries";
+@import "parts/site-header";
+@import "parts/live-header";
 @import "base/responsive";

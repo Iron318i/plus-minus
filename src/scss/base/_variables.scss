@@ -24,12 +24,12 @@ $green:   #28a745;
 $teal:    #20c997;
 $cyan:    #079fa1;
 
-$primary: $blue;
-$secondary: $yellow;
+$primary: $red;
+$secondary: $gray-700;
 
 
 // Options
-$enable-rounded: false;
+//$enable-rounded: false;
 // Spacing
 $spacer: 2rem;
 // Body
@@ -77,11 +77,14 @@ $headings-margin-bottom: 1rem;
 // Components
 // Tables
 // Buttons
-$btn-font-weight: 900;
-$btn-padding-y-lg: rem(16px);
+$btn-font-weight: 300;
 
 $btn-focus-box-shadow: none;
 // Forms
+$input-btn-font-size: rem(13px);
+$input-font-weight: 400;
+$border-radius: 3px;
+$input-border-color: #fff;
 // Dropdowns
 // Z-index master list
 // Navs
@@ -96,6 +99,8 @@ $navbar-nav-link-padding-x: 0;
 // Jumbotron
 // Form states and alerts
 // Cards
+$card-border-width: 0;
+$card-cap-bg: $gray-700;
 // Tooltips
 // Popovers
 // Badges
