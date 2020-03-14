@@ -71,6 +71,9 @@
 	    }
 	    .event-bet{
 		flex: 0 0 100%;
+		&:before{
+		    display: none!important;
+		}
 	    }
 	}
     }
