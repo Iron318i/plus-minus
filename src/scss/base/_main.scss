@@ -141,32 +141,36 @@ svg.icon{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
-    padding: 10px 0;
     font-size: 13px;
     font-weight: 400;
     > div{
-	border-left: 1px solid $gray-400;
-	padding: 5px;
-    }
-    .toggle-favorite{
-	.icon{
-	    width: 16px;
-	    height: 16px;
-	    color: #5a676d;
-	}
-    }
-    .muiltilive{
-	.icon{
-	    width: 19px;
-	    height: 19px;
-	    color: #5a676d;
+	position: relative;
+	padding: 10px 5px;
+	&:before{
+	    content: '';
+	    position: absolute;
+	    display: block;
+	    width: 1px;
+	    height: 24px;
+	    left: 0;
+	    top: 50%;
+	    transform: translateY(-50%);
+	    background-color: $gray-700;
 	}
     }
     .event-favorite{
 	flex: 0 0 7%;
-	border-left: none;
+	.icon{
+	    width: 16px;
+	    height: 16px;
+	    color: #5c696f;
+	}
+	&:before{
+	    display: none;
+	}
     }
     .event-see,
     .event-statistic{
@@ -189,10 +193,48 @@ svg.icon{
     }
     .event-message{
 	flex: 0 0 32%;
-	border-left: none;
 	text-align: right;
+	&:before{
+	    display: none;
+	}
     }
     .event-more{
 	flex: 0 0 7%;
+    }
+    .event-muiltilive{
+	flex: 0 0 7%;
+	.icon{
+	    width: 19px;
+	    height: 19px;
+	    color: #5c696f;
+	}
+	&:before{
+	    display: none;
+	}
+    }
+    .event-bet1,
+    .event-bet3{
+	flex: 0 0 39%;
+    }
+    .event-bet2{
+	flex: 0 0 15%;
+    }
+
+    .event-bet{
+	display: flex;
+	justify-content: space-between;
+	.bet-number{
+	    color: $yellow;
+	}
+	.bet-name,
+	.bet-action{
+	    padding: 0 10px;
+	}
+    }
+    .bet-action{
+	.icon{
+	    margin-right: 5px;
+	    display: none;
+	}
     }
 }
