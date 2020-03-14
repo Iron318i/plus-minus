@@ -138,27 +138,27 @@ svg.icon{
     margin-top: 20px;
 }
 .card-event{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
     font-size: 13px;
     font-weight: 400;
-    > div{
-	position: relative;
-	padding: 10px 5px;
-	&:before{
-	    content: '';
-	    position: absolute;
-	    display: block;
-	    width: 1px;
-	    height: 24px;
-	    left: 0;
-	    top: 50%;
-	    transform: translateY(-50%);
-	    background-color: $gray-700;
+    .event-row{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	> div{
+	    position: relative;
+	    padding: 10px 5px;
+	    &:before{
+		content: '';
+		position: absolute;
+		display: block;
+		width: 1px;
+		height: 24px;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		background-color: $gray-700;
+	    }
 	}
     }
     .event-favorite{
@@ -169,7 +169,7 @@ svg.icon{
 	    color: #5c696f;
 	}
 	&:before{
-	    display: none;
+	    display: none!important;
 	}
     }
     .event-see,
@@ -195,7 +195,7 @@ svg.icon{
 	flex: 0 0 32%;
 	text-align: right;
 	&:before{
-	    display: none;
+	    display: none!important;
 	}
     }
     .event-more{
@@ -209,7 +209,7 @@ svg.icon{
 	    color: #5c696f;
 	}
 	&:before{
-	    display: none;
+	    display: none!important;
 	}
     }
     .event-bet1,
@@ -222,6 +222,7 @@ svg.icon{
 
     .event-bet{
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
 	.bet-number{
 	    color: $yellow;
