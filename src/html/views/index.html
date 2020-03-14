@@ -5,23 +5,86 @@ title: "Conversion Industries"
 
 <div class="container-fluid live-bets">
     <div class="row">
-	<div class="col-2 sidebar">
+	<div class="col-lg-2 sidebar">
 	    <%= _.template(require('./../includes/live-sidebar.html').default)(data) %>
 	</div>
-	<div class="col-10 main-content">
+	<div class="col-lg-10 main-content">
 	    <%= _.template(require('./../includes/live-menu.html').default)(data) %>
 	    <div class="row">
 		<div class="col-12 col-lg-6">
-		    <div class="block-header-menu">
+		    <div class="block-header-menu bit-type">
 			<h3 class="heading">Тип ставки:</h3>
 			<div class="carousel-wrp">
 			    <div class="owl-carousel">
-				<a href="#">1x2</a>
-				<a href="#">Тотал</a>
-				<a href="#">Остальная часть матча</a>
-				<a href="#">Следующий гол</a>
+				<a href="#" class="bit-type-link current">1x2</a>
+				<a href="#" class="bit-type-link">Тотал</a>
+				<a href="#" class="bit-type-link">Остальная часть матча</a>
+				<a href="#" class="bit-type-link">Следующий гол</a>
 			    </div>
 			</div>
+		    </div>
+
+		    <div class="card-live">
+			<div class="card-event">
+			    <div class="event-favorite" title="Добавить событие в избранное">
+				<a href="#">
+				    <svg class="icon">
+				    <use xlink:href="./img/sprite.svg#event-favorite"></use>
+				    </svg>
+				</a>
+			    </div>
+			    <div class="event-see" title="Анимация матча">
+				<a href="#">
+				    <svg class="icon">
+				    <use xlink:href="./img/sprite.svg#event-see"></use>
+				    </svg>
+				</a>
+			    </div>
+			    <div class="event-statistic" title="Статистика матча">
+				<a href="#">
+				    <svg class="icon">
+				    <use xlink:href="./img/sprite.svg#event-statistic"></use>
+				    </svg>
+				</a>
+			    </div>
+			    <div class="event-number" title="Номер события">
+				<span>4041</span>
+			    </div>
+			    <div class="event-time" title="Минута матча">
+				<span>84’</span>
+			    </div>
+			    <div class="event-score">
+				<span class="main-score">3:4 </span> <span class="addition-score">(1:1)</span>
+			    </div>
+			    <div class="event-message">Прием ставок приастоновлен</div>
+			    <div class="event-more">
+				<span id="extra-bets-count">+69</span>
+			    </div>
+			    <div class="event-muiltilive" title="Добавить событие в мультилайв">
+				<a href="#">
+				    <svg class="icon">
+				    <use xlink:href="./img/sprite.svg#muiltilive"></use>
+				    </svg>
+				</a>
+			    </div>
+			    <div class="wrap-bets d-md-flex" id="head-bet-container">
+				<div class="event-bet event-bet1"><span class="name bold mr-auto">Логан Лайтнинг (Жен)</span> <div id="f-bet" style=""><div class="bet-action null" title="П1">
+					    <span class="bold mr-auto" id="short-name"></span>
+					    <span class="bet-arrows"><i class="arrow arrow-first"></i><i class="arrow arrow-second"></i></span>
+					    <span class="bet-number" id="odd">26.5</span>
+					</div></div> </div>
+				<div class="event-bet event-bet2" id="s-bet" style=""><div><div class="bet-action null" title="X">
+					    <span class="bold mr-auto" id="short-name">X</span>
+					    <span class="bet-arrows"><i class="arrow arrow-first"></i><i class="arrow arrow-second"></i></span>
+					    <span class="bet-number" id="odd">6.63</span>
+					</div></div></div>
+				<div class="event-bet event-bet3"><span class="name bold mr-auto">Лайонс (Жен)</span> <div id="t-bet" style=""><div class="bet-action null" title="П2">
+					    <span class="bold mr-auto" id="short-name"></span>
+					    <span class="bet-arrows"><i class="arrow arrow-first"></i><i class="arrow arrow-second"></i></span>
+					    <span class="bet-number" id="odd">1.06</span>
+					</div></div> </div>
+			    </div>
+			</div>                                    
 		    </div>
 		</div>
 		<div class="col-12 col-lg-6"></div>
