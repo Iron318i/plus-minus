@@ -32,8 +32,11 @@
 
     }
 }
+/*Sidbar Widgets*/
 .card{
-    background-color: $gray-800;
+    .card-header{
+	text-transform: uppercase;
+    }
 }
 .card-timeline{
     .row{
@@ -49,6 +52,26 @@
 	color: #8599a5;
 	span{
 	    color: #fff;
+	}
+    }
+}
+.site-search{
+    .btn,
+    .form-control{
+	border-radius: 0;
+	background-color: $gray-600;
+	border-color: $gray-600;
+	color: #fff;
+    }
+    .icon{
+	width: 18px;
+	height: 18px;
+    }
+    .form-control{
+	&::placeholder {
+	    color: #fff;
+	    // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
+	    opacity: 1;
 	}
     }
 }
