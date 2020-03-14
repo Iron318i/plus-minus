@@ -6,35 +6,26 @@ title: "Conversion Industries"
 <div class="container-fluid live-bets">
     <div class="row">
 	<div class="col-2 sidebar">
-	    <div class="card card-timeline">
-		<div class="card-body">
-		    <div class="row">
-			<div class="col-auto clock"><span id="clockmain">12:57:19</span></div>
-			<div class="col-auto min-bet"> Минимальная ставка - <span class="">0.5 руб.</span></div>
-		    </div>
-		</div>
-	    </div>
-	    <div class="input-group site-search">
-		<input type="text" class="form-control" placeholder="Поиск" aria-describedby="button-addon2">
-		<div class="input-group-append">
-		    <button class="btn btn-secondary" type="button" id="button-addon2"><svg class="icon"><use xlink:href="./img/sprite.svg#icon-search"></use></svg></button>
-		</div>
-	    </div>
-	    <div class="card mt-1 card-your-account">
-		<h5 class="card-header">Ваш Счёт</h5>
-		<div class="card-body">
-		    <div class="row">
-			<div class="col-auto"></div>
-			<div class="col-auto">
-			    <a href="#" class="btn btn-primary">ВАШ СЧЕТ</a>
-			    <a href="#" class="btn btn-secondary">ВЫХОД</a>
-			</div>
-		    </div>
-		</div>
-	    </div>
+	    <%= _.template(require('./../includes/live-sidebar.html').default)(data) %>
 	</div>
 	<div class="col-10 main-content">
 	    <%= _.template(require('./../includes/live-menu.html').default)(data) %>
+	    <div class="row">
+		<div class="col-12 col-lg-6">
+		    <div class="block-header-menu">
+			<h3 class="heading">Тип ставки:</h3>
+			<div class="carousel-wrp">
+			    <div class="owl-carousel">
+				<a href="#">1x2</a>
+				<a href="#">Тотал</a>
+				<a href="#">Остальная часть матча</a>
+				<a href="#">Следующий гол</a>
+			    </div>
+			</div>
+		    </div>
+		</div>
+		<div class="col-12 col-lg-6"></div>
+	    </div>
 	</div>
     </div>
 </div>

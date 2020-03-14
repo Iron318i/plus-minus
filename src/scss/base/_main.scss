@@ -75,3 +75,38 @@
 	}
     }
 }
+.card-your-account{
+    .card-body{
+	color: #8599a5;
+	font-size: 13px;
+    }
+    strong,
+    span{
+	color: #fefefe;
+    }
+    .col-auto div + div{
+	margin-top: 4px;
+    }
+    .row{
+	align-items: center;
+	justify-content: space-between;
+    }
+    .btn{
+	min-width: 96px;
+    }
+}
+.block-header-menu{
+    padding: 7px 0 7px 10px;
+    background-color: $gray-800;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    .carousel-wrp {
+	flex-grow: 1;
+    }
+    .heading{
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: 700;
+    }
+}
