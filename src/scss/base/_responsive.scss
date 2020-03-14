@@ -45,4 +45,33 @@
 	    max-width: 200px;
 	}
     }
+    .card-event{
+	.event-row{
+	    flex-wrap: wrap;
+	    .event-number,
+	    .event-statistic,
+	    .event-see,
+	    .event-favorite {
+		flex: 0 0 25%;
+	    }
+	    .event-time{
+		flex: 0 0 25%;
+		&:before{
+		    display: none!important;
+		}
+	    }
+	    .event-score{
+		flex: 0 0 25%;
+	    }
+	    .event-message{
+		flex: 0 0 35%;
+	    }
+	    .event-more{
+		flex: 0 0 15%;
+	    }
+	    .event-bet{
+		flex: 0 0 100%;
+	    }
+	}
+    }
 }
