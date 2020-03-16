@@ -146,6 +146,13 @@ svg.icon{
 	}
     }
 }
+.card-current{
+    background-color: $gray-800;
+    margin-bottom: 20px;
+    .card-event .event-row>div {
+	padding: 8px 5px;
+    }
+}
 .card-event{
     font-size: 13px;
     font-weight: 400;
@@ -265,5 +272,58 @@ svg.icon{
 	    display: inline-block;
 	    color: #cc0000;
 	}
+    }
+}
+.event-info{
+    .header-info{
+	background-color: $gray-800;
+	padding: 5px;
+	.wrap{
+	    min-height: 260px;
+	    padding: 20px;
+	    background-position: 50%;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	}
+	.sport-bg-1{
+	    background-image: url(../img/sport-bg-1.jpg);
+	}
+	.event-cat{
+	    font-size: 12px;
+	    font-weight: 400;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	}
+    }
+    .event-score{
+	margin-top: 30px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	.team{
+	    flex: 0 0 40%;
+	    font-weight: 700;
+	    font-size: 20px;
+	    span{
+		display: inline-block;
+		margin-top: 10px;
+	    }
+	}
+	.score{
+	    flex: 0 0 20%;
+	    font-weight: 700;
+	    font-size: 43px;
+	}
+    }
+    .progress-wrp{
+	margin-top: 20px;
+    }
+    .time-stamps{
+	list-style: none;
+	padding: 0;
+	margin-bottom: 0;
+	display: flex;
+	justify-content: space-between;
     }
 }
