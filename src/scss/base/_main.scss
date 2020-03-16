@@ -275,8 +275,8 @@ svg.icon{
     }
 }
 .event-info{
+    background-color: $gray-800;
     .header-info{
-	background-color: $gray-800;
 	padding: 5px;
 	.wrap{
 	    min-height: 260px;
@@ -296,15 +296,20 @@ svg.icon{
 	    justify-content: center;
 	}
     }
+    .event-time{
+	margin-top: 10px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 20px;
+    }
     .event-score{
-	margin-top: 30px;
+	margin-top: 0px;
 	display: flex;
 	align-items: center;
 	text-align: center;
 	.team{
 	    flex: 0 0 40%;
 	    font-weight: 700;
-	    font-size: 20px;
 	    span{
 		display: inline-block;
 		margin-top: 10px;
@@ -313,11 +318,15 @@ svg.icon{
 	.score{
 	    flex: 0 0 20%;
 	    font-weight: 700;
-	    font-size: 43px;
+	    font-size: 30px;
 	}
     }
     .progress-wrp{
-	margin-top: 20px;
+	margin-top: 10px;
+	.progress {
+	    background-color: #ffffff;
+	    border-radius: 5px;
+	}
     }
     .time-stamps{
 	list-style: none;
@@ -326,4 +335,68 @@ svg.icon{
 	display: flex;
 	justify-content: space-between;
     }
+}
+.match-results{
+    padding: 10px;
+    .hr{
+	width: calc(100% - 20px);
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #313d43;
+	height: 1px;
+    }
+}
+.table-result-item {
+    display: flex;
+    padding: 4px 10px;
+    font-size: 13px;
+    font-weight: 400;
+    &.head{
+	padding-left: 0;
+    }
+    &.outer,
+    &.inner{
+	background-color: $gray-900;
+    }
+    &.outer{
+	border-radius: 0 0 5px 5px;
+    }
+    &.inner{
+	border-radius: 5px 5px 0 0;
+    }
+    .team {
+	flex-grow: 2;
+    }
+    .card-red, .card-yellow,.pen,.ug {
+	width: 35px;
+	text-align: center;
+    }
+    .ico-card {
+	display: inline-block;
+	width: 10px;
+	height: 12px;
+    }
+    .ico-yellow {
+	background: #ffa800;
+    }
+    .ico-red {
+	background: #f40000;
+    }
+}
+.match-stat{
+    padding: 10px;
+}
+.stat-item .stat-progress {
+    display: flex;
+    align-items: center
+}
+
+.stat-item .stat-progress .progress.live_stat {
+    flex-grow: 2
+}
+
+.stat-item .stat-progress .team {
+    width: 20px;
+    text-align: center;
+    padding: 0 2px;
 }
