@@ -153,17 +153,9 @@ svg.icon{
 	padding: 8px 5px;
     }
 }
-.card-event{
-    font-size: 13px;
-    font-weight: 400;
+.card-live{
     .event-row{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	text-align: center;
 	> div{
-	    position: relative;
-	    padding: 10px 5px;
 	    &:before{
 		content: '';
 		position: absolute;
@@ -175,6 +167,20 @@ svg.icon{
 		transform: translateY(-50%);
 		background-color: $gray-700;
 	    }
+	}
+    }
+}
+.card-event{
+    font-size: 13px;
+    font-weight: 400;
+    .event-row{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	> div{
+	    position: relative;
+	    padding: 10px 5px;
 	}
     }
     .event-favorite{
@@ -423,5 +429,62 @@ svg.icon{
 	font-weight: 400;
 	line-height: 16px;
 	color: #000;
+    }
+}
+.groups-container{
+    padding: 0 15px;
+    background-color: $gray-800;
+    .card-event {
+	border-bottom: 1px solid $gray-700;
+    }
+    .event-row{
+	flex-wrap: wrap;
+    }
+    .event-header{
+	a{
+	    padding: 10px 0;
+	    display: inline-block;
+	    font-weight: 600;
+	    width: 100%;
+	    position: relative;
+	    &:before{
+		content: '';
+		position: absolute;
+		right: 0;
+		top: 50%;
+		display: block;
+		width: 9px;
+		height: 6px;
+		margin-top: -3px;
+		background: url(../img/collapse.svg) 50% no-repeat;
+		background-size: contain;
+		transform: scale(1, -1);
+	    }
+	}
+	.collapsed:before{
+	    transform: none;
+	}
+    }
+    .event-bet{
+	flex: 0 0 50%;
+	max-width: 50%;
+    }
+    .row-3 .event-bet{
+	flex: 0 0 33.333333%;
+	max-width: 33.333333%;
+    }
+    .row-3 .event-bet:nth-child(3n),
+	.event-row .event-bet:nth-child(2n){
+	&:before{
+	    content: '';
+	    position: absolute;
+	    display: block;
+	    width: 1px;
+	    height: 24px;
+	    left: 0;
+	    top: 50%;
+	    transform: translateY(-50%);
+	    background-color: $gray-700;
+	}
     }
 }

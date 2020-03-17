@@ -1,6 +1,6 @@
 <% var data = {
 title: "Conversion Industries",
-ver: "1.1"
+ver: "1.2"
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
 
@@ -13,625 +13,138 @@ ver: "1.1"
 	    <%= _.template(require('./../includes/live-menu.html').default)(data) %>
 	    <div class="row">
 		<div class="col-12 col-lg-6">
-		    <div class="block-header-menu bit-type">
-			<h3 class="heading">Тип ставки:</h3>
-			<div class="carousel-wrp">
-			    <div class="owl-carousel">
-				<a href="#" class="bit-type-link current">1x2</a>
-				<a href="#" class="bit-type-link">Тотал</a>
-				<a href="#" class="bit-type-link">Остальная часть матча</a>
-				<a href="#" class="bit-type-link">Следующий гол</a>
-			    </div>
-			</div>
-		    </div>
-		    <div class="card-live">
-			<div class="card-event">
-			    <div class="event-row">
-				<div class="event-favorite" title="Добавить событие в избранное">
-				    <a href="#">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#event-favorite"></use>
-					</svg>
-				    </a>
-				</div>
-				<div class="event-see" title="Анимация матча">
-				    <a href="#">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#event-see"></use>
-					</svg>
-				    </a>
-				</div>
-				<div class="event-statistic" title="Статистика матча">
-				    <a href="#">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#event-statistic"></use>
-					</svg>
-				    </a>
-				</div>
-				<div class="event-number" title="Номер события">
-				    <span>4041</span>
-				</div>
-				<div class="event-time" title="Минута матча">
-				    <span>84’</span>
-				</div>
-				<div class="event-score">
-				    <span class="main-score">3:4 </span> <span class="addition-score">(1:1)</span>
-				</div>
-				<div class="event-message"></div>
-				<div class="event-more">
-				    <span class="extra-bets-count">+69</span>
-				</div>
-			    </div>
-			    <div class="event-row">
-				<div class="event-bet event-bet-1-3 bet-up">
-				    <span class="bet-name">Логан Лайтнинг (Жен)</span> 
-				    <div class="bet-action" title="П1">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#bet-triangle"></use>
-					</svg>
-					<span class="bet-number">26.5</span>
-				    </div>
-				</div>
-				<div class="event-bet event-bet-2-3 bet-up">
-				    <span class="bet-name">X</span>
-				    <div class="bet-action" title="X">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#bet-triangle"></use>
-					</svg>
-					<span class="bet-number">6.63</span>
-				    </div>
-				</div>
-				<div class="event-bet event-bet-3-3 bet-down">
-				    <span class="bet-name">Лайонс (Жен)</span>
-				    <div class="bet-action" title="П2">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#bet-triangle"></use>
-					</svg>
-					<span class="bet-number">1.06</span>
-				    </div>
-				</div>
-			    </div>                                    
-			</div>                                    
-		    </div>
-		    <div class="card-live">
-			<div class="card-event">
-			    <div class="event-row">
-				<div class="event-favorite" title="Добавить событие в избранное">
-				    <a href="#">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#event-favorite"></use>
-					</svg>
-				    </a>
-				</div>
-				<div class="event-see" title="Анимация матча">
-				    <a href="#">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#event-see"></use>
-					</svg>
-				    </a>
-				</div>
-				<div class="event-statistic" title="Статистика матча">
-				    <a href="#">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#event-statistic"></use>
-					</svg>
-				    </a>
-				</div>
-				<div class="event-number" title="Номер события">
-				    <span>4041</span>
-				</div>
-				<div class="event-time" title="Минута матча">
-				    <span>84’</span>
-				</div>
-				<div class="event-score">
-				    <span class="main-score">3:4 </span> <span class="addition-score">(1:1)</span>
-				</div>
-				<div class="event-message"></div>
-				<div class="event-more">
-				    <span class="extra-bets-count">+69</span>
-				</div>
-			    </div>
-			    <div class="event-row">
-				<div class="event-bet event-bet-1-3 bet-down">
-				    <span class="bet-name">Логан Лайтнинг (Жен)</span> 
-				    <div class="bet-action" title="П1">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#bet-triangle"></use>
-					</svg>
-					<span class="bet-number">26.5</span>
-				    </div>
-				</div>
-				<div class="event-bet event-bet-2-3 bet-up">
-				    <span class="bet-name">X</span>
-				    <div class="bet-action" title="X">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#bet-triangle"></use>
-					</svg>
-					<span class="bet-number">6.63</span>
-				    </div>
-				</div>
-				<div class="event-bet event-bet-3-3 bet-up">
-				    <span class="bet-name">Лайонс (Жен)</span>
-				    <div class="bet-action" title="П2">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#bet-triangle"></use>
-					</svg>
-					<span class="bet-number">1.06</span>
-				    </div>
-				</div>
-			    </div>                                    
-			</div>                                    
-		    </div>
-		    <div class="card-live">
-			<div class="card-event">
-			    <div class="event-row">
-				<div class="event-favorite" title="Добавить событие в избранное">
-				    <a href="#">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#event-favorite"></use>
-					</svg>
-				    </a>
-				</div>
-				<div class="event-see" title="Анимация матча">
-				    <a href="#">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#event-see"></use>
-					</svg>
-				    </a>
-				</div>
-				<div class="event-statistic" title="Статистика матча">
-				    <a href="#">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#event-statistic"></use>
-					</svg>
-				    </a>
-				</div>
-				<div class="event-number" title="Номер события">
-				    <span>4041</span>
-				</div>
-				<div class="event-time" title="Минута матча">
-				    <span></span>
-				</div>
-				<div class="event-score">
-				    <span class="main-score">3:4 </span> <span class="addition-score">(1:1)</span>
-				</div>
-				<div class="event-message">Перерыв</div>
-				<div class="event-more">
-				    <span class="extra-bets-count">+69</span>
-				</div>
-			    </div>
-			    <div class="event-row">
-				<div class="event-bet event-bet-1-3">
-				    <span class="bet-name">Логан Лайтнинг (Жен)</span> 
-				    <div class="bet-action" title="П1">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#bet-triangle"></use>
-					</svg>
-					<span class="bet-number">26.5</span>
-				    </div>
-				</div>
-				<div class="event-bet event-bet-2-3">
-				    <span class="bet-name">X</span>
-				    <div class="bet-action" title="X">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#bet-triangle"></use>
-					</svg>
-					<span class="bet-number">6.63</span>
-				    </div>
-				</div>
-				<div class="event-bet event-bet-3-3">
-				    <span class="bet-name">Лайонс (Жен)</span>
-				    <div class="bet-action" title="П2">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#bet-triangle"></use>
-					</svg>
-					<span class="bet-number">1.06</span>
-				    </div>
-				</div>
-			    </div>                                    
-			</div>                                    
-		    </div>
-		    <div class="card-live">
-			<div class="card-event stopped-event">
-			    <div class="event-row">
-				<div class="event-favorite" title="Добавить событие в избранное">
-				    <a href="#" class="disabled">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#event-favorite"></use>
-					</svg>
-				    </a>
-				</div>
-				<div class="event-see" title="Анимация матча">
-				</div>
-				<div class="event-statistic" title="Статистика матча">
-				</div>
-				<div class="event-number" title="Номер события">
-				    <span>4041</span>
-				</div>
-				<div class="event-time" title="Минута матча">
-				    <span></span>
-				</div>
-				<div class="event-score">
-				    <span class="main-score">3:4 </span> <span class="addition-score">(1:1)</span>
-				</div>
-				<div class="event-message">Прием ставок приастоновлен</div>
-				<div class="event-more">
-				    <span class="extra-bets-count"></span>
-				</div>
-			    </div>
-			    <div class="event-row">
-				<div class="event-bet event-bet-1-3">
-				    <span class="bet-name">Логан Лайтнинг (Жен)</span> 
-				    <div class="bet-action" title="П1">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#bet-triangle"></use>
-					</svg>
-					<span class="bet-number"></span>
-				    </div>
-				</div>
-				<div class="event-bet event-bet-2-3">
-				    <span class="bet-name">X</span>
-				    <div class="bet-action" title="X">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#bet-triangle"></use>
-					</svg>
-					<span class="bet-number"></span>
-				    </div>
-				</div>
-				<div class="event-bet event-bet-3-3">
-				    <span class="bet-name">Лайонс (Жен)</span>
-				    <div class="bet-action" title="П2">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#bet-triangle"></use>
-					</svg>
-					<span class="bet-number"></span>
-				    </div>
-				</div>
-			    </div>                                    
-			</div>                                    
-		    </div>
-		    <div class="card-live">
-			<div class="card-event">
-			    <div class="event-row">
-				<div class="event-favorite" title="Добавить событие в избранное">
-				    <a href="#">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#event-favorite"></use>
-					</svg>
-				    </a>
-				</div>
-				<div class="event-see" title="Анимация матча">
-				    <a href="#">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#event-see"></use>
-					</svg>
-				    </a>
-				</div>
-				<div class="event-statistic" title="Статистика матча">
-				    <a href="#">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#event-statistic"></use>
-					</svg>
-				    </a>
-				</div>
-				<div class="event-number" title="Номер события">
-				    <span>4041</span>
-				</div>
-				<div class="event-time" title="Минута матча">
-				    <span>84’</span>
-				</div>
-				<div class="event-score">
-				    <span class="main-score">3:4 </span> <span class="addition-score">(1:1)</span>
-				</div>
-				<div class="event-message"></div>
-				<div class="event-more">
-				    <span class="extra-bets-count">+69</span>
-				</div>
-			    </div>
-			    <div class="event-row">
-				<div class="event-bet event-bet-1-3 bet-up">
-				    <span class="bet-name">Логан Лайтнинг (Жен)</span> 
-				    <div class="bet-action" title="П1">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#bet-triangle"></use>
-					</svg>
-					<span class="bet-number">26.5</span>
-				    </div>
-				</div>
-				<div class="event-bet event-bet-2-3 bet-up">
-				    <span class="bet-name">X</span>
-				    <div class="bet-action" title="X">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#bet-triangle"></use>
-					</svg>
-					<span class="bet-number">6.63</span>
-				    </div>
-				</div>
-				<div class="event-bet event-bet-3-3 bet-down">
-				    <span class="bet-name">Лайонс (Жен)</span>
-				    <div class="bet-action" title="П2">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#bet-triangle"></use>
-					</svg>
-					<span class="bet-number">1.06</span>
-				    </div>
-				</div>
-			    </div>                                    
-			</div>                                    
-		    </div>
-		    <div class="card-live">
-			<div class="card-event">
-			    <div class="event-row">
-				<div class="event-favorite" title="Добавить событие в избранное">
-				    <a href="#">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#event-favorite"></use>
-					</svg>
-				    </a>
-				</div>
-				<div class="event-see" title="Анимация матча">
-				    <a href="#">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#event-see"></use>
-					</svg>
-				    </a>
-				</div>
-				<div class="event-statistic" title="Статистика матча">
-				    <a href="#">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#event-statistic"></use>
-					</svg>
-				    </a>
-				</div>
-				<div class="event-number" title="Номер события">
-				    <span>4041</span>
-				</div>
-				<div class="event-time" title="Минута матча">
-				    <span>84’</span>
-				</div>
-				<div class="event-score">
-				    <span class="main-score">3:4 </span> <span class="addition-score">(1:1)</span>
-				</div>
-				<div class="event-message"></div>
-				<div class="event-more">
-				    <span class="extra-bets-count">+69</span>
-				</div>
-			    </div>
-			    <div class="event-row">
-				<div class="event-bet event-bet-1-3 bet-down">
-				    <span class="bet-name">Логан Лайтнинг (Жен)</span> 
-				    <div class="bet-action" title="П1">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#bet-triangle"></use>
-					</svg>
-					<span class="bet-number">26.5</span>
-				    </div>
-				</div>
-				<div class="event-bet event-bet-2-3 bet-down">
-				    <span class="bet-name">X</span>
-				    <div class="bet-action" title="X">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#bet-triangle"></use>
-					</svg>
-					<span class="bet-number">6.63</span>
-				    </div>
-				</div>
-				<div class="event-bet event-bet-3-3 bet-up">
-				    <span class="bet-name">Лайонс (Жен)</span>
-				    <div class="bet-action" title="П2">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#bet-triangle"></use>
-					</svg>
-					<span class="bet-number">1.06</span>
-				    </div>
-				</div>
-			    </div>                                    
-			</div>                                    
-		    </div>
+		    <%= _.template(require('./../includes/live-cards.html').default)(data) %>
 		</div>
 		<div class="col-12 col-lg-6">
-		    <div class="card-current">
-			<div class="card-event">
-			    <div class="event-row">
-				<div class="event-bet event-bet-1-3">
-				    <span class="bet-name">Логан Лайтнинг (Жен)</span> 
-				    <div class="bet-action" title="П1">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#bet-triangle"></use>
-					</svg>
-					<span class="bet-number">26.5</span>
-				    </div>
-				</div>
-				<div class="event-bet event-bet-2-3">
-				    <span class="bet-name">X</span>
-				    <div class="bet-action" title="X">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#bet-triangle"></use>
-					</svg>
-					<span class="bet-number">6.63</span>
-				    </div>
-				</div>
-				<div class="event-bet event-bet-3-3">
-				    <span class="bet-name">Лайонс (Жен)</span>
-				    <div class="bet-action" title="П2">
-					<svg class="icon">
-					<use xlink:href="./img/sprite.svg#bet-triangle"></use>
-					</svg>
-					<span class="bet-number">1.06</span>
-				    </div>
-				</div>
-			    </div>                                    
-			</div>                                    
-		    </div>
-		    <div class="event-info">
-			<div class="header-info">
-			    <div class="wrap sport-bg-1">
-				<div class="event-cat"><i class="country country-1"></i><span>Чемпионат Турции. Суперлига</span></div>
-				<div class="event-time"><span>70`</span></div>
-				<div class="event_info-box collapse show" style="">
-				    <div class="event-score">
-					<div class="team team-1"><div><img src="/uploads/fc-basaksehir.png" alt="Истамбул Башакшехир"></div>
-					    <span>Истамбул Башакшехир</span>
-					</div>
-					<div class="score">
-					    <span>0:0</span>
-					</div>
-					<div class="team team-2"><div><img src="/uploads/gaziantep-bb.png" alt="Газиантеп ББ"></div>
-					    <span>Газиантеп ББ</span>
-					</div>
-				    </div>
-				</div>
-				<div class="progress-wrp">
-				    <ul class="time-stamps">
-					<li>0`</li>
-					<li>15`</li>
-					<li>30`</li>
-					<li>45`</li>
-					<li>60`</li>
-					<li>75`</li>
-					<li>90`</li>
-				    </ul>
-				    <div class="progress">
-					<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-				    </div>
+		    <%= _.template(require('./../includes/live-current-event.html').default)(data) %>
+		    <div class="match-bets">
+			<div class="block-header-menu">
+			    <div class="carousel-wrp">
+				<div class="owl-carousel">
+				    <a href="#" class="bit-type-link current">Все</a>
+				    <a href="#" class="bit-type-link">Топ</a>
+				    <a href="#" class="bit-type-link">Весь матч</a>
+				    <a href="#" class="bit-type-link">1й тайм</a>
+				    <a href="#" class="bit-type-link">Форы/Тоталы</a>
+				    <a href="#" class="bit-type-link">Тайм/Матч</a>
+				    <a href="#" class="bit-type-link">Голы</a>
 				</div>
 			    </div>
 			</div>
-			<div class="row">
-			    <div class="col-md-7 col-stat">
-				<div class="match-results">
-                                    <div class="table-header table-results">
-                                        <div class="table-result-item head">
-                                            <div class="team title">
-                                                <span class="">Статистика матча</span>
-                                            </div>
-                                            <div class="card-yellow">
-                                                <span class="ico-card ico-yellow"></span>
-                                            </div>
-                                            <div class="card-red">
-                                                <span class="ico-card ico-red"></span>
-                                            </div>
-                                            <div class="ug">
-                                                <span class="">Угл.</span>
-                                            </div>
-                                            <div class="pen">
-                                                <span class="">Пен.</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="table-body">
-                                        <div class="table-result-item inner">
-                                            <div class="team">
-                                                <span class="">ФК Челябинск</span>
-                                            </div>
-                                            <div class="card-yellow">
-                                                <span>1</span>
-                                            </div>
-                                            <div class="card-red">
-                                                <span>-</span>
-                                            </div>
-                                            <div class="ug">
-                                                <span>3</span>
-                                            </div>
-                                            <div class="pen">
-                                                <span>-</span>
-                                            </div>
-                                        </div>
-					<div class="hr"></div>
-                                        <div class="table-result-item outer">
-                                            <div class="team">
-                                                <span class="">Иртыш Омск</span>
-                                            </div>
-                                            <div class="card-yellow">
-                                                <span>2</span>
-                                            </div>
-                                            <div class="card-red">
-                                                <span>-</span>
-                                            </div>
-                                            <div class="ug">
-                                                <span>4</span>
-                                            </div>
-                                            <div class="pen">
-                                                <span>-</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-				
-				<div class="match-stat">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="stat-item attacks">
-                                                <div class="stat-name">
-                                                    <span>Атаки</span>
-                                                </div>
-                                                <div class="stat-progress">
-                                                    <div class="team team-1">71</div>
-                                                    <div class="progress live_stat">
-                                                        <div class="progress-bar" role="progressbar" style="width: 45%;" aria-valuenow="45%" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                    <div class="team team-2">86</div>
-                                                </div>
-                                            </div>
-                                            <div class="stat-item hitTheGate">
-                                                <div class="stat-name">
-                                                    <span>Удары в сторону ворот</span>
-                                                </div>
-                                                <div class="stat-progress">
-                                                    <div class="team team-1">3</div>
-                                                    <div class="progress live_stat">
-                                                        <div class="progress-bar" role="progressbar" style="width: 23%;" aria-valuenow="23%" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                    <div class="team team-2">10</div>
-                                                </div>
-                                            </div>
-                                            <div class="stat-item perBall">
-                                                <div class="stat-name">
-                                                    <span>% владения мячом</span>
-                                                </div>
-                                                <div class="stat-progress">
-                                                    <div class="team team-1">39</div>
-                                                    <div class="progress live_stat">
-                                                        <div class="progress-bar" role="progressbar" style="width: 39%;" aria-valuenow="39%" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                    <div class="team team-2">61</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="stat-item dangerousAttacks">
-                                                <div class="stat-name">
-                                                    <span>Опасные атаки</span>
-                                                </div>
-                                                <div class="stat-progress">
-                                                    <div class="team team-1">14</div>
-                                                    <div class="progress live_stat">
-                                                        <div class="progress-bar" role="progressbar" style="width: 27%;" aria-valuenow="27%" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                    <div class="team team-2">38</div>
-                                                </div>
-                                            </div>
-                                            <div class="stat-item hitOnTarget">
-                                                <div class="stat-name">
-                                                    <span>Удары в створ</span>
-                                                </div>
-                                                <div class="stat-progress">
-                                                    <div class="team team-1">4</div>
-                                                    <div class="progress live_stat">
-                                                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80%" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                    <div class="team team-2">1</div>
-                                                </div>
-                                            </div>                                                                                                                     
-                                        </div>
-                                    </div>
-                                </div>
+			<div class="groups-container">
+			    <div class="card-event">
+				<div class="event-header ">
+				    <a data-toggle="collapse" href="#eventIshod" role="button" aria-expanded="false" aria-controls="eventIshod">Исход</a>
+				</div>
+				<div class="collapse show" id="eventIshod">
+				    <div class="event-row row-3">
+					<div class="event-bet">
+					    <span class="bet-name">П1</span> 
+					    <div class="bet-action" title="П1">
+						<svg class="icon">
+						<use xlink:href="./img/sprite.svg#bet-triangle"></use>
+						</svg>
+						<span class="bet-number">26.5</span>
+					    </div>
+					</div>
+					<div class="event-bet">
+					    <span class="bet-name">X</span>
+					    <div class="bet-action" title="X">
+						<svg class="icon">
+						<use xlink:href="./img/sprite.svg#bet-triangle"></use>
+						</svg>
+						<span class="bet-number">6.63</span>
+					    </div>
+					</div>
+					<div class="event-bet">
+					    <span class="bet-name">П2</span>
+					    <div class="bet-action" title="П2">
+						<svg class="icon">
+						<use xlink:href="./img/sprite.svg#bet-triangle"></use>
+						</svg>
+						<span class="bet-number">1.06</span>
+					    </div>
+					</div>
+				    </div>
+				</div>
 			    </div>
-			    <div class="col-md-5 col-mapattack">
-				<div class="sports-mapattack">
-				    <div class="bg">
-					<div class="msg-box">
-					    <span>С мячом<br> Гиресунспор</span>
+			    <div class="card-event">
+				<div class="event-header ">
+				    <a data-toggle="collapse" href="#eventDvoinoishans" role="button" aria-expanded="false" aria-controls="eventDvoinoishans">Двойной шанс</a>
+				</div>
+				<div class="collapse show" id="eventDvoinoishans">
+				    <div class="event-row row-3">
+					<div class="event-bet">
+					    <span class="bet-name">П1</span> 
+					    <div class="bet-action" title="П1">
+						<svg class="icon">
+						<use xlink:href="./img/sprite.svg#bet-triangle"></use>
+						</svg>
+						<span class="bet-number">26.5</span>
+					    </div>
+					</div>
+					<div class="event-bet">
+					    <span class="bet-name">X</span>
+					    <div class="bet-action" title="X">
+						<svg class="icon">
+						<use xlink:href="./img/sprite.svg#bet-triangle"></use>
+						</svg>
+						<span class="bet-number">6.63</span>
+					    </div>
+					</div>
+					<div class="event-bet">
+					    <span class="bet-name">П2</span>
+					    <div class="bet-action" title="П2">
+						<svg class="icon">
+						<use xlink:href="./img/sprite.svg#bet-triangle"></use>
+						</svg>
+						<span class="bet-number">1.06</span>
+					    </div>
+					</div>
+				    </div>
+				</div>
+			    </div>
+			    <div class="card-event">
+				<div class="event-header ">
+				    <a data-toggle="collapse" href="#eventFory" role="button" aria-expanded="false" aria-controls="eventFory">Форы</a>
+				</div>
+				<div class="collapse show" id="eventFory">
+				    <div class="event-row">
+					<div class="event-bet">
+					    <span class="bet-name">Ф2(1.5)</span> 
+					    <div class="bet-action" title="П1">
+						<svg class="icon">
+						<use xlink:href="./img/sprite.svg#bet-triangle"></use>
+						</svg>
+						<span class="bet-number">39.76</span>
+					    </div>
+					</div>
+					<div class="event-bet">
+					    <span class="bet-name">Ф2(1.5)</span> 
+					    <div class="bet-action" title="П1">
+						<svg class="icon">
+						<use xlink:href="./img/sprite.svg#bet-triangle"></use>
+						</svg>
+						<span class="bet-number">39.76</span>
+					    </div>
+					</div>
+					<div class="event-bet">
+					    <span class="bet-name">Ф2(1.5)</span> 
+					    <div class="bet-action" title="П1">
+						<svg class="icon">
+						<use xlink:href="./img/sprite.svg#bet-triangle"></use>
+						</svg>
+						<span class="bet-number">39.76</span>
+					    </div>
+					</div>
+					<div class="event-bet">
+					    <span class="bet-name">Ф2(1.5)</span> 
+					    <div class="bet-action" title="П1">
+						<svg class="icon">
+						<use xlink:href="./img/sprite.svg#bet-triangle"></use>
+						</svg>
+						<span class="bet-number">39.76</span>
+					    </div>
 					</div>
 				    </div>
 				</div>
