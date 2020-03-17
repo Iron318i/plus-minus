@@ -100,6 +100,7 @@
 	    }
 	}
     }
+    .card-current,
     .card-live{
 	.event-bet{
 	    flex: 0 0 100%;
@@ -107,5 +108,8 @@
 		display: none!important;
 	    }
 	}
+    }
+    .site-footer{
+	text-align: center;
     }
 }

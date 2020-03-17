@@ -74,7 +74,6 @@ svg.icon{
     .form-control{
 	&::placeholder {
 	    color: #fff;
-	    // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
 	    opacity: 1;
 	}
     }
@@ -497,4 +496,32 @@ svg.icon{
 	    background-color: $gray-700;
 	}
     }
+}
+.site-footer{
+    padding: 40px 0;
+    font-size: 12px;
+    .row{
+	align-items: center;
+	justify-content: center;
+    }
+    .col-auto{
+	margin-top: 10px;
+	margin-bottom: 10px;
+    }
+    .info{
+	margin-left: 20px;
+	margin-right: 20px;
+    }
+    p{
+	margin-bottom: 0;
+    }
+    .gray{
+	color: #5f6e75;
+    }
+    .nav{
+	li{
+	    flex: 0 0 33%;
+	}
+    }
+
 }
