@@ -98,11 +98,13 @@
 	    .event-more{
 		flex: 0 0 15%;
 	    }
-	    .event-bet{
-		flex: 0 0 100%;
-		&:before{
-		    display: none!important;
-		}
+	}
+    }
+    .card-live{
+	.event-bet{
+	    flex: 0 0 100%;
+	    &:before{
+		display: none!important;
 	    }
 	}
     }

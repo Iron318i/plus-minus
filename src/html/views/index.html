@@ -1,6 +1,6 @@
 <% var data = {
 title: "Conversion Industries",
-ver: "1.2"
+ver: "1.3"
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
 
@@ -17,140 +17,7 @@ ver: "1.2"
 		</div>
 		<div class="col-12 col-lg-6">
 		    <%= _.template(require('./../includes/live-current-event.html').default)(data) %>
-		    <div class="match-bets">
-			<div class="block-header-menu">
-			    <div class="carousel-wrp">
-				<div class="owl-carousel">
-				    <a href="#" class="bit-type-link current">Все</a>
-				    <a href="#" class="bit-type-link">Топ</a>
-				    <a href="#" class="bit-type-link">Весь матч</a>
-				    <a href="#" class="bit-type-link">1й тайм</a>
-				    <a href="#" class="bit-type-link">Форы/Тоталы</a>
-				    <a href="#" class="bit-type-link">Тайм/Матч</a>
-				    <a href="#" class="bit-type-link">Голы</a>
-				</div>
-			    </div>
-			</div>
-			<div class="groups-container">
-			    <div class="card-event">
-				<div class="event-header ">
-				    <a data-toggle="collapse" href="#eventIshod" role="button" aria-expanded="false" aria-controls="eventIshod">Исход</a>
-				</div>
-				<div class="collapse show" id="eventIshod">
-				    <div class="event-row row-3">
-					<div class="event-bet">
-					    <span class="bet-name">П1</span> 
-					    <div class="bet-action" title="П1">
-						<svg class="icon">
-						<use xlink:href="./img/sprite.svg#bet-triangle"></use>
-						</svg>
-						<span class="bet-number">26.5</span>
-					    </div>
-					</div>
-					<div class="event-bet">
-					    <span class="bet-name">X</span>
-					    <div class="bet-action" title="X">
-						<svg class="icon">
-						<use xlink:href="./img/sprite.svg#bet-triangle"></use>
-						</svg>
-						<span class="bet-number">6.63</span>
-					    </div>
-					</div>
-					<div class="event-bet">
-					    <span class="bet-name">П2</span>
-					    <div class="bet-action" title="П2">
-						<svg class="icon">
-						<use xlink:href="./img/sprite.svg#bet-triangle"></use>
-						</svg>
-						<span class="bet-number">1.06</span>
-					    </div>
-					</div>
-				    </div>
-				</div>
-			    </div>
-			    <div class="card-event">
-				<div class="event-header ">
-				    <a data-toggle="collapse" href="#eventDvoinoishans" role="button" aria-expanded="false" aria-controls="eventDvoinoishans">Двойной шанс</a>
-				</div>
-				<div class="collapse show" id="eventDvoinoishans">
-				    <div class="event-row row-3">
-					<div class="event-bet">
-					    <span class="bet-name">П1</span> 
-					    <div class="bet-action" title="П1">
-						<svg class="icon">
-						<use xlink:href="./img/sprite.svg#bet-triangle"></use>
-						</svg>
-						<span class="bet-number">26.5</span>
-					    </div>
-					</div>
-					<div class="event-bet">
-					    <span class="bet-name">X</span>
-					    <div class="bet-action" title="X">
-						<svg class="icon">
-						<use xlink:href="./img/sprite.svg#bet-triangle"></use>
-						</svg>
-						<span class="bet-number">6.63</span>
-					    </div>
-					</div>
-					<div class="event-bet">
-					    <span class="bet-name">П2</span>
-					    <div class="bet-action" title="П2">
-						<svg class="icon">
-						<use xlink:href="./img/sprite.svg#bet-triangle"></use>
-						</svg>
-						<span class="bet-number">1.06</span>
-					    </div>
-					</div>
-				    </div>
-				</div>
-			    </div>
-			    <div class="card-event">
-				<div class="event-header ">
-				    <a data-toggle="collapse" href="#eventFory" role="button" aria-expanded="false" aria-controls="eventFory">Форы</a>
-				</div>
-				<div class="collapse show" id="eventFory">
-				    <div class="event-row">
-					<div class="event-bet">
-					    <span class="bet-name">Ф2(1.5)</span> 
-					    <div class="bet-action" title="П1">
-						<svg class="icon">
-						<use xlink:href="./img/sprite.svg#bet-triangle"></use>
-						</svg>
-						<span class="bet-number">39.76</span>
-					    </div>
-					</div>
-					<div class="event-bet">
-					    <span class="bet-name">Ф2(1.5)</span> 
-					    <div class="bet-action" title="П1">
-						<svg class="icon">
-						<use xlink:href="./img/sprite.svg#bet-triangle"></use>
-						</svg>
-						<span class="bet-number">39.76</span>
-					    </div>
-					</div>
-					<div class="event-bet">
-					    <span class="bet-name">Ф2(1.5)</span> 
-					    <div class="bet-action" title="П1">
-						<svg class="icon">
-						<use xlink:href="./img/sprite.svg#bet-triangle"></use>
-						</svg>
-						<span class="bet-number">39.76</span>
-					    </div>
-					</div>
-					<div class="event-bet">
-					    <span class="bet-name">Ф2(1.5)</span> 
-					    <div class="bet-action" title="П1">
-						<svg class="icon">
-						<use xlink:href="./img/sprite.svg#bet-triangle"></use>
-						</svg>
-						<span class="bet-number">39.76</span>
-					    </div>
-					</div>
-				    </div>
-				</div>
-			    </div>
-			</div>
-		    </div>
+		    <%= _.template(require('./../includes/live-match-bets.html').default)(data) %>
 		</div>
 	    </div>
 	</div>

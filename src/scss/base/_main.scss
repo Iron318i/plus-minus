@@ -153,6 +153,7 @@ svg.icon{
 	padding: 8px 5px;
     }
 }
+.card-current,
 .card-live{
     .event-row{
 	> div{
@@ -429,6 +430,15 @@ svg.icon{
 	font-weight: 400;
 	line-height: 16px;
 	color: #000;
+    }
+}
+.match-bets{
+    .block-header-menu{
+	padding: 5px 0;
+	background: $gray-700;
+	.carousel-wrp{
+	    max-width: 100%;
+	}
     }
 }
 .groups-container{
