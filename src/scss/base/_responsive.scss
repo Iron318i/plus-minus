@@ -55,6 +55,26 @@
 	max-width: 100%;
     }
 }
+@media(min-width: 992px) and (max-width: 1679px){
+    .top-btns{
+	.btn{
+	    width: 100%;
+	}
+    }
+    .btns{
+	.btn{
+	    margin-bottom: 5px;
+	}
+    }
+    .btns,
+    .single-bet{
+	text-align: center;
+	> div{
+	    flex: 0 0 100%;
+	    max-width: 100%;
+	}
+    }
+}
 @include media-breakpoint-down(lg){
     .site-header {
 	.navbar-nav{

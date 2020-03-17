@@ -121,6 +121,60 @@ svg.icon{
 	min-width: 96px;
     }
 }
+.card-your-bets{
+    .card-body{
+	background-color: #fdfa00;
+	font-size: 13px;
+	color: #000;
+    }
+    .list-group-item{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-color: #000;
+	color: #000;
+    }
+    .top-btns{
+	.btn{
+	    margin-bottom: 5px;
+	}
+    }
+    .event{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.teame-names,
+	.bet-number{
+	    font-weight: 700;
+	}
+	.close{
+	    color: $red;
+	}
+    }
+    h3{
+	text-transform: uppercase;
+	font-weight: 700;
+    }
+    .form-row{
+	align-items: center;
+	margin-bottom: 10px;
+	.form-control{
+	    text-align: center;
+	    font-weight: 700;
+	    border-radius: 0;
+	    border: 1px solid #cacaca;
+	}
+    }
+    .max-bet{
+	color: #f90;
+	font-size: 14px;
+	font-weight: 400;
+    }
+    .btns{
+	.btn{
+	    font-size: 12px;
+	}
+    }
+}
 .block-header-menu{
     padding-left: 10px;
     background-color: $gray-800;

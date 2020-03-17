@@ -16,9 +16,59 @@
     <h5 class="card-header">
 	<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#card-your-bets" aria-expanded="false" aria-controls="card-your-bets">Карточка ставок</button>
     </h5>
-    <div class="collapse how" id="card-your-bets">
+    <div class="collapse show" id="card-your-bets">
+	<div class="card-body top-btns">
+	    <form>
+		<input id="vars0" onclick="vAct( & quot; 0 & quot; );" class="btn btn-secondary" type="button" value="Ординар">
+		<input id="vars1" onclick="vAct( & quot; 1 & quot; );" class="btn btn-outline-secondary" type="button" value="Экспресс">
+		<input id="vars2" onclick="vAct( & quot; 2 & quot; );" class="btn btn-outline-secondary" type="button"  value="Система">
+	    </form>
+	</div>
+	<ul class="list-group list-group-flush">
+	    <li class="list-group-item event">
+		<div class="teame-names">
+		    <div class="t-1">Ренессанс Конго</div>
+		    <div class="t-1">Сэн-Элуа Лупопо</div>
+		</div>
+		<div class="bet-number">
+		    <span>1.50</span>
+		</div>
+	    </li>
+	    <li class="list-group-item event">
+		<div class="">
+		    Победа 1-й команды с формой <strong>0</strong>
+		</div>
+		<a href="#" class="close"><svg class="icon"><use xlink:href="./img/sprite.svg#close"></use></svg></a>
+	    </li>
+	</ul>
 	<div class="card-body">
-	   
+	    <h3>ОДИНОЧНАЯ СТАВКА</h3>
+	    <div class="form-row single-bet">
+		<div class="col-3"><strong>Сумма ставки</strong></div>
+		<div class="col-7"> 
+		    <input type="hidden" name="avgcoef" value="1.32">
+		    <input type="hidden" name="maxgold" value="           309.38">
+		    <input type="hidden" name="maxstandard" value="             3.13">
+		    <input class="form-control" type="text" name="sumbet" value="0" onkeyup="calcWin();" onfocus="actSumbet(); calcWin();"> 
+		</div>
+		<div class="col-2">руб.</div>
+	    </div>
+	    <p>Возможный выигрыш <span id="winexp">0.00</span> руб.</p>
+	    <div class="form-group">
+		<div class="custom-control custom-checkbox">
+		    <input type="checkbox" class="custom-control-input" id="goldbet-check" name="goldbet"  value="1" onclick="goldClick();">
+		    <label class="custom-control-label" for="goldbet-check"><b>Goldbet</b> (повышенный максимум)</label>
+		</div>
+	    </div>
+	    <p><a href="javascript:isSumbet(&quot;3.13&quot;);" class="max-bet">Макс.ставка 198.00</a></p>
+	    <div class="form-row btns">
+		<div class="col-6">
+		    <button class="btn btn-block btn-primary">СДЕЛАТЬ СТАВКУ</button>
+		</div>
+		<div class="col-6">
+		    <button class="btn btn-block btn-secondary">ОЧИСТИТЬ</button>
+		</div>
+	    </div>
 	</div>
     </div>
 </div>
