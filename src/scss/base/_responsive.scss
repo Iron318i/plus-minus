@@ -87,12 +87,20 @@
     .col-lg-6+.col-lg-6{
 	margin-top: 20px;
     }
+    .site-header{
+	.nav-link{
+	    display: inline-block;
+	}
+    }
 }
 @include media-breakpoint-down(sm){
     .site-header {
 	.navbar-brand{
 	    max-width: 200px;
 	}
+    }
+    .card-your-bets.fixed-top{
+	margin-top: 0 !important;
     }
     .card-event{
 	.event-row{
@@ -132,4 +140,5 @@
     .site-footer{
 	text-align: center;
     }
+
 }

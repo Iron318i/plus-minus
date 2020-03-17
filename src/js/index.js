@@ -44,4 +44,18 @@ import 'owl.carousel';
 	autoWidth: true,
 	items: 4,
     });
+
+    $(window).scroll(function () {
+	if ($(window).width() < 991) {
+	    if ($(this).scrollTop() > 190) {
+		$('.card-your-bets').addClass('fixed-top');
+	    } else {
+		$('.card-your-bets').removeClass('fixed-top');
+	    }
+	}
+    });
+    if ($(window).width() > 992) {
+	$('#card-your-bets').collapse('show');
+    }
+
 }(jQuery);

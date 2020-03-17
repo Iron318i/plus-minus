@@ -126,6 +126,8 @@ svg.icon{
 	background-color: #fdfa00;
 	font-size: 13px;
 	color: #000;
+	padding-top: 9px;
+	padding-bottom: 5px;
     }
     .list-group-item{
 	padding-top: 5px;
@@ -134,6 +136,8 @@ svg.icon{
 	color: #000;
     }
     .top-btns{
+	padding-top: 9px;
+	padding-bottom: 4px;
 	.btn{
 	    margin-bottom: 5px;
 	}
@@ -154,16 +158,21 @@ svg.icon{
 	text-transform: uppercase;
 	font-weight: 700;
 	text-align: center;
+	margin-bottom: 5px;
     }
     .form-row{
 	align-items: center;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 	.form-control{
 	    text-align: center;
 	    font-weight: 700;
 	    border-radius: 0;
 	    border: 1px solid #cacaca;
 	}
+    }
+    p,
+    .form-group {
+	margin-bottom: 5px;
     }
     .max-bet{
 	color: #f90;
